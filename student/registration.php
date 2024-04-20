@@ -1,4 +1,5 @@
 <?php
+  include "connection.php";
   include "navbar.php";
 ?>
 
@@ -25,44 +26,62 @@
 </head>
 
 <body>
-  
-<!-- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand active">Book House</h1>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.php">HOME</a></li>
-      <li><a href="books.php">BOOKS</a></li>
-      <li><a href="">ABOUT</a></li>
-      <li><a href="feedback.php">FEEDBACK</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="student_login.php"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a></li>
-      <li><a href="student_login.php"><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a></li>
-      <li><a href="registration.php"><span class="glyphicon glyphicon-user"> SIGN UP</span></a></li>
-    </ul>
-  </div>
-</nav> -->
-    
       <section>
         <div class="reg_img">
           <div class="box2">
             <h1 style="text-align: center; font-size:35px;">User Registration Form</h1>
-            <form action="" method="" name="registration">
-              <br><br>
+            <form name="registration" action="" method="post">
               <div class="login">
-                <input type="text" name="frstname" placeholder="Enter First Name" required=""><br><br>
+                <input type="text" name="firstname" placeholder="Enter First Name" required=""><br><br>
                 <input type="text" name="lastname" placeholder="Enter Last Name" required=""><br><br>
                 <input type="text" name="username" placeholder="Enter Username" required=""><br><br>
                 <input type="password" name="password" placeholder="Enter Password" required=""><br><br>
-                <input type="text" name="email" placeholder="Enter Email Adress" required=""><br><br>
                 <input type="text" name="prn" placeholder="Enter PRN" required=""><br><br>
-                <button style="font-size: 18px; font-weight: bold;">Sign Up</button>
+                <input type="text" name="email" placeholder="Enter Email Adress" required=""><br><br>
+                <input type="text" name="contact" placeholder="Enter Mobile Number" required=""><br><br>
+                <button style="font-size: 18px; font-weight: bold;" type="submit" name="submit">Sign Up</button>
               </div>
             </form>
           </div>
         </div>
       </section>
+      <?php
+
+         if(isset($_POST['submit']))
+         { 
+           $count=0;
+           $sql="SELECT username FROM `student`";
+           $res=mysqli_query($db,$sql);
+
+           while($row=mysqli_fetch_assoc($res))
+           {
+             if($row['username']==$_POST['username'])
+             {
+               $count=$count+1;
+             }
+           }
+
+           if($count==0)
+           {
+             mysqli_query($db,"INSERT INTO `STUDENT` VALUES('$_POST[firstname]','$_POST[lastname]','$_POST[username]','$_POST[password]','$_POST[prn]','$_POST[email]','$_POST[contact]')");
+      ?>
+             <script type="text/javascript">
+               alert("Registration successful");
+             </script>
+           
+      <?php
+            }
+            else
+            {
+      ?>
+             <script type="text/javascript">
+               alert("The username already exits. Use another username");
+             </script>
+           
+      <?php
+            }
+         }
+
+      ?>
 </body>
 </html>

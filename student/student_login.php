@@ -1,7 +1,6 @@
 <?php
   include "navbar.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,24 +27,6 @@
   </head>
 
   <body>
-<!--     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand active">Book House</h1>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="index.php">HOME</a></li>
-          <li><a href="books.php">BOOKS</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="feedback.php">FEEDBACK</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="student_login.php"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a></li>
-          <li><a href="student_login.php"><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a></li>
-          <li><a href="registration.php"><span class="glyphicon glyphicon-user"> SIGN UP</span></a></li>
-        </ul>
-      </div>
-    </nav> -->
     <section>
       <div class="log_img">
         <div class="box1">
