@@ -1,0 +1,165 @@
+/*-------------------------------Main code   INDEX ---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+header {
+    height: 13vh;
+    width: 100vw;
+    background-color: black;
+    padding: 10px;
+}
+
+ nav {
+    float: right;
+    word-spacing: 30px;
+    padding: 20px;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+.logo img {
+    float: left;
+    padding: 10px;
+    height: 100px;
+    filter: invert(100%);
+} */
+
+section {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+section video {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.box {
+    position: absolute;
+    z-index: 10;
+    min-height: 300px;
+    min-width: 600px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #030002;
+    border: 3px solid rgb(15, 243, 144);
+    border-radius: 15px;
+    margin-top: 200px;
+    padding:100px 5px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+section .box h1 {
+    text-align: center;
+    color: rgb(147, 245, 243);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+footer {
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* --------login page------------- */
+
+.log_img {
+    /* background-color: red; */
+    width: 100vw;
+    height: 100%;
+    background-image: url("images/log_img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    height: 400px;
+    width: 550px;
+    background-color: black;
+    margin: 70px auto;
+    opacity: .8;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+
+}
+
+.login {
+    margin: auto 70px;
+    text-align: center;
+}
+
+input {
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000;
+    border: 3px solid rgb(5, 251, 116);
+    padding: 5px;
+    padding-left: 10px;
+}
+
+button {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(16, 44, 87);
+    border:3px solid rgb(4, 214, 246);
+    color: black;
+    border-radius: 10px;
+}
+
+/* ------------------registration-------------------- */
+.reg_img {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/reg_img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box2 {
+    height: 550px;
+    width: 450px;
+    margin-top: 5px;
+    background-color: black;
+    opacity: .8;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+
+}
