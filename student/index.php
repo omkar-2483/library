@@ -81,22 +81,13 @@
             <?php
           }
         ?>
-
-        <nav>
-          <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="books.php">BOOKS</a></li>
-            <li><a href="student_login.php">STUDENT_LOGIN</a></li>
-            <li><a href="feedback.php">FEEDBACK</a></li>
-          </ul>
-        </nav>
       </header>
 
       <section>
         <div class="box">
           <h1>Welcome to Library</h1>
         </div>
-        <video src="videos/bgvdo.mp4" autoplay loop muted></video>
+        <video src="videos/bg_video.mp4" autoplay loop muted></video>
       </section>
     <?php
       include "footer.php";

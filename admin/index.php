@@ -87,7 +87,7 @@
         <div class="box">
           <h1>Welcome to Library</h1>
         </div>
-        <video src="videos/bgvdo.mp4" autoplay loop muted></video>
+        <video src="videos/bg_video.mp4" autoplay loop muted></video>
       </section>
     <?php
       include "footer.php";
