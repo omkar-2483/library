@@ -1,8 +1,8 @@
 /*-------------------------------Main code   INDEX ---------------------------------------------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     color: white;
 }
 
@@ -74,12 +74,12 @@ section .box h1 {
     font-weight: bold;
     font-size: 50px;
 }
-
+/*
 footer {
     height: 20vh;
     width: 100vw;
     background-color: black;
-}
+}*/
 
 li a {
     color: white;
@@ -109,7 +109,6 @@ li a {
     opacity: .8;
     border: 3px solid wheat;
     border-radius: 10px;
-    color: white;
     padding: 20px;
 
 }
@@ -117,26 +116,26 @@ li a {
 .login {
     margin: auto 70px;
     text-align: center;
+    color:black; 
 }
 
-input {
+ input {
     height: 35px;
     width: 300px;
     border-radius: 10px;
     font-size: 16px;
-    color: #000;
     border: 3px solid rgb(5, 251, 116);
     padding: 5px;
     padding-left: 10px;
-}
+} 
 
 button {
     height: 35px;
     width: 100px;
     background-color: rgb(16, 44, 87);
     border:3px solid rgb(4, 214, 246);
-    color: black;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 /* ------------------registration-------------------- */
@@ -159,7 +158,6 @@ button {
     opacity: .8;
     border: 3px solid wheat;
     border-radius: 10px;
-    color: white;
     padding: 20px;
 
 }

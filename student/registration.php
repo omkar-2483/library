@@ -39,7 +39,7 @@
                 <input type="text" name="prn" placeholder="Enter PRN" required=""><br><br>
                 <input type="text" name="email" placeholder="Enter Email Adress" required=""><br><br>
                 <input type="text" name="contact" placeholder="Enter Mobile Number" required=""><br><br>
-                <button style="font-size: 18px; font-weight: bold;" type="submit" name="submit">Sign Up</button>
+                <button style="color:white; font-size: 18px; font-weight: bold;" type="submit" name="submit">Sign Up</button>
               </div>
             </form>
           </div>
@@ -83,5 +83,9 @@
          }
 
       ?>
+
+    <?php
+      include "footer.php";
+    ?>      
 </body>
 </html>

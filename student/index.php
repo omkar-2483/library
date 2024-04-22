@@ -1,3 +1,7 @@
+<?php
+   session_start();
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,6 +52,36 @@
         <div class="logo">
           <img src="images/logo.png" alt="library logo" />
         </div>
+
+        <?php
+          if(isset($_SESSION['login_user']))
+          {
+            ?>
+            <nav>
+              <ul>
+               <li><a href="index.php">HOME</a></li>
+               <li><a href="books.php">BOOKS</a></li>
+               <li><a href="logout.php">LOGOUT</a></li>
+               <li><a href="feedback.php">FEEDBACK</a></li>
+              </ul>
+            </nav>
+            <?php
+          }
+          else
+          {
+            ?>
+            <nav>
+              <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="books.php">BOOKS</a></li>
+                <li><a href="student_login.php">STUDENT_LOGIN</a></li>
+                <li><a href="feedback.php">FEEDBACK</a></li>
+              </ul>
+            </nav>          
+            <?php
+          }
+        ?>
+
         <nav>
           <ul>
             <li><a href="index.php">HOME</a></li>
@@ -64,17 +98,9 @@
         </div>
         <video src="videos/bgvdo.mp4" autoplay loop muted></video>
       </section>
-
-      <footer>
-        <p style="text-align: center">
-          <br />
-          Contact: bookhouse@libary.com <br />
-          <br />
-          Email: kastureomkar03@gmail.com<br />
-          <br />
-          Mobile: +91 XXXXXXXXXXX
-        </p>
-      </footer>
+    <?php
+      include "footer.php";
+    ?>
     </div>
   </body>
 </html>
